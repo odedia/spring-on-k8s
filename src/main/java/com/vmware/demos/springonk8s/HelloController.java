@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 class HelloController {
-    @Value("${app.message:Hello world, HELLO!}")
+    @Value("${app.message:Hello world!}")
     private String message;
 
     @GetMapping(value = "/", produces = MediaType.TEXT_PLAIN_VALUE)
